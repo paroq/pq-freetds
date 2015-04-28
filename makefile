@@ -12,7 +12,7 @@ build-stamp: stage-stamp
 stage-stamp: configure-stamp
 
 configure-stamp: patch-stamp
-	cd $(pq_part_name) && ./configure --with-tdsver=$(pq_part_branch) 
+	cd $(pq_part_name) && ./configure --prefix=$(part_dir) --with-tdsver=$(pq_part_branch) 
 	touch $@
 
 patch-stamp: unpack-stamp
