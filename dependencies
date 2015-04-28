@@ -1,2 +1,2 @@
 part: 'pq-libiconv', branch: '1.14'
-part: 'pq-pcc', branch: '4.9.1'
+part: 'pq-gcc', branch: '4.9.1'
